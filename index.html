@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RSS</title>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <ul v-show="isShowList">
+            <li v-for="item in json">
+                <div v-html="item.description"></div>
+                <p v-on:click="viewContent(item.link)"> {{ item.title }}</p>
+            </li>
+        </ul>
+
+        <div v-html="content">
+        </div>
+    </div>
+
+    <script src="js/custom.js"></script>
+</body>
+</html>

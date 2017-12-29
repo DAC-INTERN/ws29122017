@@ -1,0 +1,15 @@
+{
+    "name": "jaredchu/ws29122017",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jared Chu",
+            "email": "me@jaredchu.com"
+        }
+    ],
+    "require": {
+        "jaredchu/jc-request": "^1.2",
+        "paquettg/php-html-parser": "^1.7"
+    }
+}
