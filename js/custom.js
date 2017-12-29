@@ -8,7 +8,7 @@ new Vue({
     },
     created: function () {
         var _this = this;
-        $.getJSON('http://ws.test/rss.php?url=http://dantri.com.vn/trangchu.rss', function (json) {
+        $.getJSON('/rss.php?url=http://dantri.com.vn/trangchu.rss', function (json) {
             _this.json = json;
         });
     },
@@ -17,7 +17,7 @@ new Vue({
             var _this = this;
             this.isShowList = false;
 
-            $.getJSON('http://ws.test/parse.php?url=' + url, function (json) {
+            $.getJSON('/parse.php?url=' + url, function (json) {
                 _this.content = json.content;
                 _this.isShowContent = true;
             });
