@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>RSS</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mystyle.css">
+
     <script
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -10,10 +16,12 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-    <div id="app">
+<div id="app" class="container">
+    <div class="wrapper">
+        <h1 id="title" class="display-4 text-primary">Dân Trí Rss</h1>
         <ul v-show="isShowList">
-            <li v-for="item in json">
-                <div v-html="item.description"></div>
+            <li class="clear-fix" v-for="item in json">
+                <div class="Info-form" v-html="item.description"></div>
                 <p v-on:click="viewContent(item.link)"> {{ item.title }}</p>
             </li>
         </ul>
@@ -21,7 +29,8 @@
         <div v-html="content">
         </div>
     </div>
+</div>
 
-    <script src="js/custom.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
