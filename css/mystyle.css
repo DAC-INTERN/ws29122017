@@ -1,34 +1,48 @@
-ul li{
+ul li {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 .wrapper {
     max-width: 1170px;
     padding: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
 
- }
+}
 
 .Info-form {
     padding: 15px;
     margin-top: 15px;
 
 }
-img {
+
+.Info-form a img {
     width: 15%;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
     padding: 0;
     margin-right: 15px;
     margin-bottom: 20px;
     float: left;
     border: solid #0476de;
 }
-p:hover {
-    color: #05af2f;
-    cursor:pointer;
+
+.Info-form a:hover img {
+    opacity: .5;
 }
+
+.paragraph {
+    font-size: 20px;
+}
+
+.paragraph:hover {
+    color: #05af2f;
+    cursor: pointer;
+}
+
 .clear-fix {
     clear: both;
 }
-

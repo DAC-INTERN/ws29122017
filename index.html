@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>RSS</title>
@@ -22,7 +22,7 @@
         <ul v-show="isShowList">
             <li class="clear-fix" v-for="item in json">
                 <div class="Info-form" v-html="item.description"></div>
-                <p v-on:click="viewContent(item.link)"> {{ item.title }}</p>
+                <p class="paragraph" v-on:click="viewContent(item.link)"> {{ item.title }}</p>
             </li>
         </ul>
 
