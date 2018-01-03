@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>RSS</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
           rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
           crossorigin="anonymous">
@@ -18,7 +19,17 @@
 <body>
 <div id="app" class="container">
     <div class="wrapper">
-        <h1 id="title" class="display-4 text-primary">Dân Trí Rss</h1>
+        <div class="catergories">
+            <li class="sub-menu-parent" tab-index="0">
+               <a href="http://google.com"><i class="fa fa-navicon"></i></a>
+               <ul class="sub-menu">
+                 <li><a href="#">Đời sống & xã hội</a></li>
+                 <li><a href="#">Thời trang</a></li>
+                 <li><a href="#">Kinh tế</a></li>
+                 <li><a href="#">Thể thao</a></li>
+               </ul>
+            </li>
+        </div>
         <ul v-show="isShowList">
             <li class="clear-fix" v-for="item in json">
                 <div class="Info-form" v-html="item.description"></div>
