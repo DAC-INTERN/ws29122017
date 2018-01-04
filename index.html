@@ -21,12 +21,16 @@
     <div class="wrapper">
         <div class="catergories">
             <li class="sub-menu-parent" tab-index="0">
-               <a href="http://google.com"><i class="fa fa-navicon"></i></a>
+               <div  class="catergories">
+                   <a href="http://google.com"><i class="fa fa-navicon"></i></a>
+                   <a href="." id="mainPage">Trang chủ</a>
+               </div>
+
                <ul class="sub-menu">
-                 <li><a href="#">Đời sống & xã hội</a></li>
-                 <li><a href="#">Thời trang</a></li>
-                 <li><a href="#">Kinh tế</a></li>
-                 <li><a href="#">Thể thao</a></li>
+                 <li v-on:click="create('/rss.php?url=http://dantri.com.vn/xa-hoi.rss')">Đời sống & xã hội</li>
+                 <li><a href="#" v-on:click="">Thời trang</a></li>
+                 <li><a href="#" v-on:click="">Kinh tế</a></li>
+                 <li><a href="#" v-on:click="">Thể thao</a></li>
                </ul>
             </li>
         </div>
