@@ -99,7 +99,3 @@ ul li {
 .catergories{
     display: inline-block;
 }
-
-.catergories > a{
-    font-size: 100px;
-}
