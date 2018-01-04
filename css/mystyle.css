@@ -96,7 +96,10 @@ ul li {
     color: black;
 }
 
-ul.sub-menu a {
-  color: black;
+.catergories{
+    display: inline-block;
 }
 
+.catergories > a{
+    font-size: 100px;
+}
