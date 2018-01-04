@@ -27,5 +27,3 @@ foreach ($xmlObject->channel->item as $object) {
 }
 
 echo json_encode($data);
-
-?>

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>RSS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/css.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
           rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
           crossorigin="anonymous">
@@ -27,8 +26,8 @@
                </div>
 
                <ul class="sub-menu">
-                 <li><a href="">Đời sống & xã hội</a></li>
-                 <li><a href="#">Thời trang</a></li>
+                 <li v-on:click="LinkRss('/rss.php?url=http://dantri.com.vn/suc-khoe.rss')">Đời sống & xã hội</li>
+                 <li v-on:click="LinkRss('/rss.php?url=http://dantri.com.vn/the-thao.rss')"> Thời trang </li>
                  <li><a href="#">Kinh tế</a></li>
                  <li><a href="#">Thể thao</a></li>
                </ul>
