@@ -1,9 +1,10 @@
+/*List Information*/
 ul li {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
+/*Wrap*/
 .wrapper {
     max-width: 1170px;
     padding: 10px;
@@ -11,13 +12,13 @@ ul li {
     margin-bottom: 50px;
 
 }
-
+/*Css for form information*/
 .Info-form {
     padding: 15px;
     margin-top: 15px;
 
 }
-
+/*Image*/
 .Info-form a img {
     width: 15%;
     opacity: 1;
@@ -35,7 +36,8 @@ ul li {
 }
 
 .paragraph {
-    font-size: 20px;
+    font-size: 15px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .paragraph:hover {
@@ -47,6 +49,32 @@ ul li {
     clear: both;
 }
 
+/*Css for Information details*/
+
+.VCSortableInPreviewMode{
+    display: inline-block;
+    width: 100%;
+}
+.VCSortableInPreviewMode div img{
+    width: 60%;
+    padding: 5px;
+}
+.VCSortableInPreviewMode .PhotoCMS_Caption {
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+p {
+    padding: 5px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/**/
 .sub-menu-parent {
     position: relative;
     width: 100px;
