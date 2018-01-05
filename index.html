@@ -20,17 +20,18 @@
     <div class="wrapper">
         <div class="catergories">
             <li class="sub-menu-parent" tab-index="0">
-               <div  class="header">
-                   <a href="http://google.com"><i class="fa fa-navicon"></i></a>
-               </div>
+                <div class="header">
+                    <a href="http://google.com"><i class="fa fa-navicon"></i></a>
+                </div>
 
-               <ul class="sub-menu">
-                 <li v-on:click="LinkRss('/rss.php?url=http://dantri.com.vn/suc-khoe.rss')"><a href="#">Sức khỏe</a></li>
-                 <li v-on:click="LinkRss('/rss.php?url=http://dantri.com.vn/the-gioi.rss')"><a href="#">Thế giới</a></li>
-                 <li v-on:click="LinkRss('/rss.php?url=http://dantri.com.vn/kinh-doanh.rss')"><a href="#">Kinh tế</a></li>
-                 <li v-on:click="LinkRss('/rss.php?url=http://dantri.com.vn/the-thao.rss')"><a href="#">Thể thao</a></li>
-                 <li v-on:click="LinkRss('/rss.php?url=http://dantri.com.vn/giao-duc-khuyen-hoc.rss')"><a href="#">Giáo dục</a></li>
-               </ul>
+                <ul class="sub-menu">
+                    <li v-on:click="LinkRss('http://dantri.com.vn/suc-khoe.rss')"><a href="#">Sức khỏe</a></li>
+                    <li v-on:click="LinkRss('http://dantri.com.vn/the-gioi.rss')"><a href="#">Thế giới</a></li>
+                    <li v-on:click="LinkRss('http://dantri.com.vn/kinh-doanh.rss')"><a href="#">Kinh tế</a></li>
+                    <li v-on:click="LinkRss('http://dantri.com.vn/the-thao.rss')"><a href="#">Thể thao</a></li>
+                    <li v-on:click="LinkRss('http://dantri.com.vn/giao-duc-khuyen-hoc.rss')"><a href="#">Giáo dục</a>
+                    </li>
+                </ul>
             </li>
             <a href="." id="mainPage">Trang chủ</a>
         </div>
@@ -41,7 +42,7 @@
             </li>
         </ul>
 
-        <div v-html="content">
+        <div v-html="content" v-show="isShowContent">
         </div>
     </div>
 </div>

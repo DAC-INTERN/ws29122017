@@ -25,9 +25,11 @@ new Vue({
         },
         LinkRss: function (url) {
             var _this = this;
-            $.getJSON(  url , function (json) {
+            $.getJSON('/rss.php?url=' + url , function (json) {
                 _this.json = json;
             });
+            _this.isShowContent = false;
+            _this.isShowList = true;
         }
     }
 });
