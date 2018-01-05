@@ -10,13 +10,11 @@ ul li {
     padding: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
-
 }
 /*Css for form information*/
 .Info-form {
     padding: 15px;
     margin-top: 15px;
-
 }
 /*Image*/
 .Info-form a img {
@@ -74,19 +72,17 @@ p {
 }
 
 
-/**/
+/*CSS for dropdown navigator*/
+
 .sub-menu-parent {
     position: relative;
     width: 100px;
     list-style-type: none;
     margin-left: 15px;
-    margin-bottom: 120px;
+    margin-bottom: 20px;
 }
 
-.fa-navicon{
-    font-size: 30px;
-}
-
+/*CSS for list of dropdown navigator*/
 .sub-menu {
   visibility: hidden; /* hides sub-menu */
   opacity: 0;
@@ -98,9 +94,10 @@ p {
   z-index: -1;
   transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
   background: lightblue;
-  width: 300px;
+  width: 160px;
 }
 
+/*CSS for dropdown animation*/
 .sub-menu-parent:focus .sub-menu,
 .sub-menu-parent:focus-within .sub-menu,
 .sub-menu-parent:hover .sub-menu {
@@ -112,7 +109,7 @@ p {
 }
 
 #app a:hover {
-    color: black;
+    color: green;
 }
 
 #app ul,
@@ -120,10 +117,27 @@ p {
     list-style-type: none; padding: 0; margin: 0;
 }
 
-.sub-menu > li {
-    color: black;
+/*CSS for Main page button*/
+.catergories{
+  position: relative;
+}
+
+#mainPage{
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  font-size: 20px;
+}
+
+/*CSS for Navigator Menu*/
+.fa-navicon{
+  font-size: 30px;
+}
+
+.sub-menu{
+  background-color: #F5F5F5;
 }
 
 .catergories{
-    display: inline-block;
+  padding: 0;
 }
