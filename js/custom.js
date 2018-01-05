@@ -33,3 +33,10 @@ new Vue({
         }
     }
 });
+
+$(document).ready(function () {
+    $(".Info-form a").each(function () {
+        $(this).removeAttr("href");
+    });
+    console.log('ok');
+});
