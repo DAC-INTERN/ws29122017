@@ -1,0 +1,150 @@
+/*List Information*/
+ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Wrap*/
+.wrapper {
+    max-width: 1170px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*Css for form information*/
+.Info-form {
+    padding: 15px;
+    margin-top: 15px;
+}
+
+/*Image*/
+.Info-form a img {
+    width: 15%;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    padding: 0;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    float: left;
+    border: solid #0476de;
+}
+
+.Info-form a:hover img {
+    opacity: .5;
+}
+
+.paragraph {
+    font-size: 15px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.paragraph:hover {
+    color: #05af2f;
+    cursor: pointer;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+/*Css for Information details*/
+
+.VCSortableInPreviewMode {
+    display: inline-block;
+    width: 100%;
+}
+
+.VCSortableInPreviewMode div img {
+    width: 60%;
+    padding: 5px;
+}
+
+.VCSortableInPreviewMode .PhotoCMS_Caption {
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    padding: 5px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/*CSS for dropdown navigator*/
+
+.sub-menu-parent {
+    position: relative;
+    width: 100px;
+    list-style-type: none;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+/*CSS for list of dropdown navigator*/
+.sub-menu {
+    visibility: hidden; /* hides sub-menu */
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    background: lightblue;
+    width: 160px;
+}
+
+/*CSS for dropdown animation*/
+.sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+#app a:hover {
+    color: green;
+}
+
+#app ul,
+#app ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*CSS for Main page button*/
+.catergories {
+    position: relative;
+}
+
+#mainPage {
+    position: absolute;
+    top: 0px;
+    left: 80px;
+    font-size: 20px;
+}
+
+/*CSS for Navigator Menu*/
+.fa-navicon {
+    font-size: 30px;
+}
+
+.sub-menu {
+    background-color: #F5F5F5;
+}
+
+.catergories {
+    padding: 0;
+}

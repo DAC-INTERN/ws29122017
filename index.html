@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>RSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mystyle.css">
+
     <script
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -10,18 +16,37 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-    <div id="app">
+<div id="app" class="container">
+    <div class="wrapper">
+        <div class="catergories">
+            <li class="sub-menu-parent" tab-index="0">
+                <div class="header">
+                    <a href="http://google.com"><i class="fa fa-navicon"></i></a>
+                </div>
+
+                <ul class="sub-menu">
+                    <li v-on:click="LinkRss('http://dantri.com.vn/suc-khoe.rss')"><a href="#">Sức khỏe</a></li>
+                    <li v-on:click="LinkRss('http://dantri.com.vn/the-gioi.rss')"><a href="#">Thế giới</a></li>
+                    <li v-on:click="LinkRss('http://dantri.com.vn/kinh-doanh.rss')"><a href="#">Kinh tế</a></li>
+                    <li v-on:click="LinkRss('http://dantri.com.vn/the-thao.rss')"><a href="#">Thể thao</a></li>
+                    <li v-on:click="LinkRss('http://dantri.com.vn/giao-duc-khuyen-hoc.rss')"><a href="#">Giáo dục</a>
+                    </li>
+                </ul>
+            </li>
+            <a href="." id="mainPage">Trang chủ</a>
+        </div>
         <ul v-show="isShowList">
-            <li v-for="item in json">
-                <div v-html="item.description"></div>
-                <p v-on:click="viewContent(item.link)"> {{ item.title }}</p>
+            <li class="clear-fix" v-for="item in json">
+                <div class="Info-form" v-html="item.description" v-on:click="viewContent(item.link)"></div>
+                <p class="paragraph" v-on:click="viewContent(item.link)"> {{ item.title }}</p>
             </li>
         </ul>
 
-        <div v-html="content">
+        <div v-html="content" v-show="isShowContent">
         </div>
     </div>
+</div>
 
-    <script src="js/custom.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
