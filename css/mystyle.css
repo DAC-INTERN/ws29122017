@@ -148,3 +148,7 @@ p {
 .catergories {
     padding: 0;
 }
+
+.news-tag{
+    display: none;
+}
