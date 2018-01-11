@@ -1,4 +1,18 @@
-env: flex
-runtime: php
-runtime_config:
-  document_root: .
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /
+  script: index.html
+
+- url: /rss.php
+  script: rss.php
+
+- url: /parse.php
+  script: parse.php
+
+- url: /(.+\.(css|js))$
+  static_files: \1
+  upload: .+\.(css|js)$
+  application_readable: true
+
